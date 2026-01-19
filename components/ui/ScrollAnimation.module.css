@@ -1,0 +1,59 @@
+.scrollAnimation {
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.scrollAnimation.visible {
+  opacity: 1;
+}
+
+/* Direction animations */
+.up {
+  transform: translateY(50px);
+}
+
+.up.visible {
+  transform: translateY(0);
+}
+
+.down {
+  transform: translateY(-50px);
+}
+
+.down.visible {
+  transform: translateY(0);
+}
+
+.left {
+  transform: translateX(-50px);
+}
+
+.left.visible {
+  transform: translateX(0);
+}
+
+.right {
+  transform: translateX(50px);
+}
+
+.right.visible {
+  transform: translateX(0);
+}
+
+.fade {
+  transform: scale(0.9);
+}
+
+.fade.visible {
+  transform: scale(1);
+}
+
+/* Combined animations */
+.up.visible,
+.down.visible,
+.left.visible,
+.right.visible,
+.fade.visible {
+  opacity: 1;
+}
+
